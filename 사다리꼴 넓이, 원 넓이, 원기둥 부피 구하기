@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+int main() {
+
+    double a, b, c; // 변수 선언 (a = 밑변, 반지름, b= 윗변, c = 높이)
+    const double PI = 3.14159;
+    cout << "밑변(반지름)을 입력하세요 : ";
+    cin >> a;
+    cout << "윗변 입력 : ";
+    cin >> b;
+    cout << "높이 입력 : ";
+    cin >> c;
+
+    cout << "밑변" << a << ", 윗변" << ", 높이" << c << "인 사다리꼴의 넓이는 " << a * b * c / 2 << "입니다." << endl;
+    cout << "반지름" << a << ", 인 원의 넓이는" << a * a * PI << "입니다." << endl;
+    cout << "반지름" << a << ", 높이" << c << "인 원기둥의 부피는 " << a * a * PI * c << "입니다." << endl;
+
+    return 0;
+}
