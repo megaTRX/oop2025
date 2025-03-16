@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main()
+
+{
+// 변수 3개 선언
+int hour;
+int minute;
+int second;
+long long total_second;
+
+// 전체 초(second) 입력받기
+cout << "초를 입력: ";
+cin >> total_second;
+
+// 초와 분과 시간을 계산하고 변수에 저장
+hour = total_second / 3600;
+minute = (total_second % 3600) / 60;
+second = total_second % 60;
+
+// 시간, 분, 초 출력
+cout << hour << "시간 " << minute << "분 " << second << "초입니다." << endl;
+
+return 0;
+}
