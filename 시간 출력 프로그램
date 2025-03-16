@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+// 변수 4개 선언 (이때, hour과 total_second는 큰 숫자가 필요하므로, long long 사용)
+long long hour;
+int minute;
+int second;
+long long total_second;
+
+// 시간(hour), 분(minute), 초(second) 입력받기
+cout << "시를 입력: ";
+cin >> hour;
+cout << "분을 입력: ";
+cin >> minute;
+cout << "초를 입력: ";
+cin >> second;
+
+// 전체 초를 시간 + 분 + 초를 통해 변수에 저장
+total_second = hour * 3600 + minute * 60 + second;
+
+// 총 초(second) 출력
+cout << "총" << total_second << "초입니다." << endl;
+
+return 0;
+}
